@@ -1,0 +1,62 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "yourname.frame-macro",
+	"name": "Frame Macro",
+	"version": "v1.0.0",
+	"developer": "yourname",
+	"description": "Record and replay inputs tick-for-tick, with a live frame counter and a click-gap overlay.",
+	"settings": {
+		"show-overlay": {
+			"type": "bool",
+			"name": "Show overlay",
+			"description": "Frame counter, plus the click-gap histogram while recording or replaying.",
+			"default": true
+		},
+		"show-gap-stats": {
+			"type": "bool",
+			"name": "Show click-gap histogram",
+			"description": "How many inputs came 1, 2, 3, 4, 5-6, 7-8, 9-12, 13-16 or 17+ frames after the previous one.",
+			"default": true
+		},
+		"presses-only": {
+			"type": "bool",
+			"name": "Gaps between presses only",
+			"description": "Off: gap between any two inputs (press or release). On: press to press only.",
+			"default": false
+		},
+		"safe-mode": {
+			"type": "bool",
+			"name": "Safe mode while replaying",
+			"description": "Completions during a replay are treated as test-mode runs, so they are not saved or submitted.",
+			"default": true
+		},
+		"keys-title": {
+			"type": "title",
+			"name": "Keybinds"
+		},
+		"key-record": {
+			"type": "keybind",
+			"name": "Record from the start",
+			"default": "F6",
+			"category": "gameplay"
+		},
+		"key-replay": {
+			"type": "keybind",
+			"name": "Replay from the start",
+			"default": "F7",
+			"category": "gameplay"
+		},
+		"key-stop": {
+			"type": "keybind",
+			"name": "Stop (saves a recording)",
+			"default": "F8",
+			"category": "gameplay"
+		}
+	}
+}
